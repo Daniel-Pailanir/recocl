@@ -37,10 +37,11 @@ codevar{cmd:,}
  {cmd:recocl}  
  
 {pstd} 
-Since xxx, Chile has changed its municipal code a couple of times. Currently, not all databases have the most current 
+Chile has changed his municipal code a couple of times. Currently, not all databases have the most current 
 municipality code, therefore it is necessary to carry out a recoding of the municipality code of some municipality in 
-region 1 and 8. This is exactly what {cmdab:recocl} does, recode the 21 municipalities that become region 16 in 2017 
-and recode the 4 municipalities that become region 15 in 2008. The list of municipalities are:
+region 1, 8 and 10. This is exactly what {cmdab:recocl} does, recode the 21 municipalities that become region 16 in 2017, 
+recode the 4 municipalities that become region 15 and recode 12 municipalities that become region 14 in 2007. 
+The list of municipalities are:
 
      {txt}
              {c TLC}{hline 21}{c TRC}
@@ -116,6 +117,12 @@ Actually is not necessary create a new variable, we can overwrite.
 
 {pstd}
 .recocl comuna, y(2017)
+
+{title:Acknowledgements}
+{pstd}
+
+{pstd}
+I am grateful to Ignacio García for feedback.
 
 {title:Author}
 {p}
