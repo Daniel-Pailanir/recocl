@@ -3,7 +3,7 @@
 {title:Title}
 
 {p 4 4 2}
-{cmdab:recocl} {hline 1} Recodes municipality code for Chile (CL)
+{cmdab:recocl} {hline 1} Recodes municipality's codes for Chile (CL)
 
 {marker syntax}{...}
 {title:Syntax}
@@ -38,15 +38,48 @@ codevar{cmd:,}
  
 {pstd} 
 Chile has changed his municipal code a couple of times. Currently, not all databases have the most current 
-municipality code, therefore it is necessary to carry out a recoding of the municipality code of some municipality in 
-region 1, 8 and 10. This is exactly what {cmdab:recocl} does, recode the 21 municipalities that become region 16 in 2017, 
-recode the 4 municipalities that become region 15 and recode 12 municipalities that become region 14 in 2007. 
-The list of municipalities are:
+municipality code, therefore it is necessary to carry out a recoding of the municipality code for some municipalities 
+in region I (Arica y Parinacota), VIII (Bio-Bio) and X (Los Ríos). This is exactly what {cmdab:recocl} does, recode 12 
+municipalities that become region 14, recode the 4 municipalities that become region 15 in 2007 and recode 
+the 21 municipalities that become region 16 in 2017. The list of municipalities are:
+
+    {txt}
+             {c TLC}{hline 21}{c TRC}
+             {c |}{res}   Los  Ríos  2007   {txt}{c |}
+             {c |}{res} Old Code   New Code{txt} {c |}
+             {c |}{res}    X          XIV{txt}   {c |}			 
+             {c LT}{hline 21}{c RT}
+             {c |}  10501  ->  14104   {c |}
+             {c |}  10502  ->  14102   {c |}
+             {c |}  10506  ->  14103   {c |}
+             {c |}  10507  ->  14104   {c |}
+             {c |}  10508  ->  14105   {c |}	
+             {c |}  10509  ->  14106   {c |}	
+             {c |}  10510  ->  14107   {c |}	
+             {c |}  10511  ->  14108   {c |}	
+             {c |}  10504  ->  14201   {c |}
+             {c |}  10503  ->  14202   {c |}	
+             {c |}  10505  ->  14203   {c |}	
+             {c |}  10512  ->  14204   {c |}	
+             {c BLC}{hline 21}{c BRC}
+
+    {txt}
+             {c TLC}{hline 21}{c TRC}
+             {c |}{res}Arica Parinacota 2007{txt}{c |}
+             {c |}{res} Old Code   New Code{txt} {c |}
+             {c |}{res}    I          XV{txt}    {c |}			 
+             {c LT}{hline 21}{c RT}
+             {c |}   1201  ->  15101   {c |}
+             {c |}   1202  ->  15102   {c |}
+             {c |}   1301  ->  15201   {c |}
+             {c |}   1302  ->  15202   {c |}	
+             {c BLC}{hline 21}{c BRC}
 
      {txt}
              {c TLC}{hline 21}{c TRC}
              {c |}{res}     Ñuble  2017     {txt}{c |}
              {c |}{res} Old Code   New Code{txt} {c |}
+             {c |}{res}   XIII        XVI{txt}   {c |}			 
              {c LT}{hline 21}{c RT}
              {c |}   8401  ->  16101   {c |}
              {c |}   8402  ->  16102   {c |}
@@ -70,59 +103,30 @@ The list of municipalities are:
              {c |}   8417  ->  16304   {c |}	
              {c |}   8419  ->  16305   {c |}
              {c BLC}{hline 21}{c BRC}
-			 
-    {txt}
-             {c TLC}{hline 21}{c TRC}
-             {c |}{res}Arica Parinacota 2007{txt}{c |}
-             {c |}{res} Old Code   New Code{txt} {c |}
-             {c LT}{hline 21}{c RT}
-             {c |}   1201  ->  15101   {c |}
-             {c |}   1202  ->  15102   {c |}
-             {c |}   1301  ->  15201   {c |}
-             {c |}   1302  ->  15202   {c |}	
-             {c BLC}{hline 21}{c BRC}
 
-    {txt}
-             {c TLC}{hline 21}{c TRC}
-             {c |}{res}   Los  Ríos  2007   {txt}{c |}
-             {c |}{res} Old Code   New Code{txt} {c |}
-             {c LT}{hline 21}{c RT}
-             {c |}  10501  ->  14104   {c |}
-             {c |}  10502  ->  14102   {c |}
-             {c |}  10506  ->  14103   {c |}
-             {c |}  10507  ->  14104   {c |}
-             {c |}  10508  ->  14105   {c |}	
-             {c |}  10509  ->  14106   {c |}	
-             {c |}  10510  ->  14107   {c |}	
-             {c |}  10511  ->  14108   {c |}	
-             {c |}  10504  ->  14201   {c |}
-             {c |}  10503  ->  14202   {c |}	
-             {c |}  10505  ->  14203   {c |}	
-             {c |}  10512  ->  14204   {c |}	
-             {c BLC}{hline 21}{c BRC}
-			 
+
 {marker examples}{...}
 {title:Examples}
 {pstd}
 
 {pstd}
 If we have a municipal database from 2015 and we want to do some merge with a database from 2018 
-we need recode the municipal variable. We must to know the year of change that we need to apply, in this case {cmdab:2017}:
+we need recode the municipal variable. We must know the year of change that we need to apply, in this case 2017:
 
 {pstd}
-.recocl comuna, y(2017) gen(newcode)
+{cmdab:.recocl comuna, y(2017)}
 
 {pstd}
-Actually is not necessary create a new variable, we can overwrite.
+If we want to create a new variable, we must add {cmdab:gen()} option.
 
 {pstd}
-.recocl comuna, y(2017)
+{cmdab:.recocl comuna, y(2017) gen(newcode)}
 
 {title:Acknowledgements}
 {pstd}
 
 {pstd}
-I am grateful to Ignacio García for feedback.
+I am grateful to Ignacio García and Camilo Acuña for feedback.
 
 {title:Author}
 {p}

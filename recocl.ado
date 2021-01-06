@@ -1,5 +1,5 @@
-*! recocl: Recode municipality code from Chile 
-*! Version 1.0.0 January, 2021
+*! recocl: Recodes municipality's codes for Chile (CL)
+*! Version 1.0.0 January 6, 2021
 *! Author: Daniel Pailañir Vargas
 *! daniel.pailanir@gmail.com
 
