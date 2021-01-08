@@ -24,7 +24,7 @@ if ("`year'"!="2017") + ("`year'"!="2007")>1 {
     exit 198 
 }  
 *-------------------------------------------------------------------------------
-*'recode' for municipalities of 'Bio Bio' and 'Tarapaca'
+*'recode' for municipalities of region I, X and XVIII
 *-------------------------------------------------------------------------------
 if "`year'"=="2017" {
     if "`generate'"!="" {
