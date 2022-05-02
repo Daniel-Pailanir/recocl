@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.0.0 December 12, 2020}
+{* *! version 1.0.1 April 20, 2021}
 {title:Title}
 
 {p 4 4 2}
@@ -18,9 +18,11 @@ codevar{cmd:,}
 {synopthdr}
 {synoptline}
 {syntab:Main}
-{synopt:{cmdab:y:ear(}year{cmd:)}} Specifies the year of municipal code change (2007 or 2017). This is required.
+{synopt:{cmdab:y:ear(}year{cmd:)}} Specifies the year of municipal code change (2007, 2010 or 2017). This is required.
 {p_end}
 {synopt:{cmdab:gen:erate(}name{cmd:)}} Specifies the name of the new variable. Default is overwrite the code-variable.
+{p_end}
+{synopt:{cmdab:all}} Recodes for all years before 2017. This options requires specifying {cmdab:year}(2017).
 {p_end}
 
 {pstd}
@@ -41,7 +43,7 @@ Chile has changed his municipal code a couple of times. Currently, not all datab
 municipality code, therefore it is necessary to carry out a recoding of the municipality code for some municipalities 
 in region I (Arica y Parinacota), VIII (Bio-Bio) and X (Los Ríos). This is exactly what {cmdab:recocl} does, recode 12 
 municipalities that become region 14, recode the 4 municipalities that become region 15 in 2007 and recode 
-the 21 municipalities that become region 16 in 2017. The list of municipalities are:
+the 21 municipalities that become region 16 in 2017. I added 4 municipalities in 2010 for Marga Marga. The list of municipalities are:
 
     {txt}
              {c TLC}{hline 21}{c TRC}
@@ -74,6 +76,19 @@ the 21 municipalities that become region 16 in 2017. The list of municipalities 
              {c |}   1301  ->  15201   {c |}
              {c |}   1302  ->  15202   {c |}	
              {c BLC}{hline 21}{c BRC}
+			 
+    {txt}
+             {c TLC}{hline 21}{c TRC}
+             {c |}{res}  Marga  Marga 2010  {txt}{c |}
+             {c |}{res} Old Code   New Code{txt} {c |}
+             {c |}{res} Old Prov.  New Prov.{txt}{c |}			 
+             {c LT}{hline 21}{c RT}
+             {c |}   5106  ->  5801    {c |}
+             {c |}   5505  ->  5802    {c |}
+             {c |}   5507  ->  5803    {c |}
+             {c |}   5108  ->  5804    {c |}	
+             {c BLC}{hline 21}{c BRC}			 
+			 
 
      {txt}
              {c TLC}{hline 21}{c TRC}
@@ -122,6 +137,12 @@ If we want to create a new variable, we must add {cmdab:gen()} option.
 {pstd}
 {cmdab:.recocl comuna, y(2017) gen(newcode)}
 
+{pstd}
+If we want to recode 2017, 2010 and 2007, we must add the option {cmdab:all}.
+
+{pstd}
+{cmdab:.recocl comuna, y(2017) all}
+
 {title:Acknowledgements}
 {pstd}
 
@@ -131,5 +152,5 @@ I am grateful to Ignacio García and Camilo Acuña for feedback.
 {title:Author}
 {p}
 
-Daniel Pailañir
-Email {browse "mailto:daniel.pailanir@gmail.com":daniel.pailanir@gmail.com}
+Daniel Pailañir, Universidad de Chile.
+Email {browse "mailto:dpailanir@fen.uchile.cl":dpailanir@fen.uchile.cl}
