@@ -17,7 +17,7 @@ github install Daniel-Pailanir/recocl
 
 ## Ejemplo
 
-La forma para aplicar todas las codificaciones de comunas hasta el año 2017 es simplemente tipear:
+Para aplicar todas las codificaciones de comunas hasta el año 2017, simplemente tipear:
 ```s
 recocl codigo_comuna, gen(nuevo_codigo_comuna) year(2017) all
 ```
