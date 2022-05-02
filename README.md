@@ -24,7 +24,7 @@ recocl codigo_comuna, gen(nuevo_codigo_comuna) year(2017) all
 
 Lo que nos generará los siguientes cambios:
 
- |  Región de Los Ríos X &rarr XIV |   
+ |  Región de Los Ríos X &#8594 XIV |   
  | ---------------------------- |  
  |  10501    ->  14104   |
  |  10502    ->  14102   |
