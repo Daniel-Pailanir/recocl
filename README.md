@@ -42,3 +42,7 @@ Lo que nos generará los siguientes cambios:
              |  10512   |  14204   | 
 
 
+| Header 1  | Header 2            | Header 3  |
+| --------- | ------------------- | --------- |
+| Some data |                     | Cell 3    |
+| data      | Some long data here | more data | 
