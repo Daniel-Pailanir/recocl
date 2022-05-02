@@ -25,10 +25,10 @@ recocl codigo_comuna, gen(nuevo_codigo_comuna) year(2017) all
 Lo que nos generará los siguientes cambios:
 
              |   Los  Ríos  2007   |
-             |---------------------|
+             | ------------------- |
              | Old Code | New Code |
              |    X     |    XIV   |                   
-             |----------|----------|
+             | -------- | -------- |
              |  10501   |  14104   |
              |  10502   |  14102   |
              |  10506   |  14103   |
