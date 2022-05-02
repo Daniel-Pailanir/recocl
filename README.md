@@ -24,8 +24,8 @@ recocl codigo_comuna, gen(nuevo_codigo_comuna) year(2017) all
 
 Lo que nos generará los siguientes cambios:
 
- |  Región de Los Ríos X 🠊 XIV |   
- | ---------------------------- |  
+ |  Región de Los Ríos: X 🠊 XIV |   
+ | :----------------------------: |  
  |  10501    🠊  14104   |
  |  10502    🠊  14102   |
  |  10506    🠊  14103   |
@@ -39,22 +39,22 @@ Lo que nos generará los siguientes cambios:
  |  10505    🠊  14203   |    
  |  10512    🠊  14204   | 
 
- |  Región de Arica y Parinacota I 🠊 XV |   
- | ---------------------------- |  
+ |  Región de Arica y Parinacota: I 🠊 XV |   
+ | :----------------------------: |  
  |   1201  🠊  15101   |
  |   1202  🠊  15102   |
  |   1301  🠊  15201   |
  |   1302  🠊  15202   | 
 
  |  Provincia de Marga Marga    |   
- | ---------------------------- |  
+ | :----------------------------: |  
  |   5106  🠊  5801    |
  |   5505  🠊  5802    |
  |   5507  🠊  5803    |
  |   5108  🠊  5804    |     
 
- |  Región de Ñuble XIII XVI    |   
- | ---------------------------- | 
+ | Región de Ñuble: XIII 🠊 XVI |   
+ | :----------------------------: | 
  |   8401  🠊  16101   |
  |   8402  🠊  16102   |
  |   8406  🠊  16103   |
