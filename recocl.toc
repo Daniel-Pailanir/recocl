@@ -1,8 +1,0 @@
-v 2.0.0
-d Daniel Pailañir
-d dpailanir@fen.uchile.cl
-d https://github.com/Daniel-Pailanir/recocl
-
-d 'recocl': Recodifica códigos de comuna para Chile
-
-p recocl
