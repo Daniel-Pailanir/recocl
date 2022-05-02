@@ -26,9 +26,9 @@ Lo que nos generará los siguientes cambios:
 
 
 
- |  Old  X  | New  XIV |   |  Old  X  | New  XIV |
- | -------- | -------- |   | -------- | -------- |
- |  10501   |  14104   |   |  10501   |  14104   |
+ |  Old  X  | New  XIV |   
+ | -------- | -------- |  
+ |  10501   |  14104   |
  |  10502   |  14102   |
  |  10506   |  14103   |
  |  10507   |  14104   |
@@ -43,6 +43,6 @@ Lo que nos generará los siguientes cambios:
 
 
 
-
+INCOMPLETO
 
 
