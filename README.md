@@ -26,8 +26,7 @@ Lo que nos generará los siguientes cambios:
 
              |   Los  Ríos  2007   |
              | ------------------- |
-             | Old Code | New Code |
-             |    X     |    XIV   |                   
+             | Old Code X | New Code  XIV |
              | -------- | -------- |
              |  10501   |  14104   |
              |  10502   |  14102   |
