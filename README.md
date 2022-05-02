@@ -24,15 +24,8 @@ recocl codigo_comuna, gen(nuevo_codigo_comuna) year(2017) all
 
 Lo que nos generará los siguientes cambios:
 
-| Available  |||| Process   | Allocation    ||||     Max      ||||
-|---|---|---|---|-----------|-----|---|---|----|---|---|---|-----|
-| A | B | C | D |           |   A | B | C | D  | A | B | C | D   |
-| 1 | 5 | 2 | 0 | P0        |   0 | 0 | 1 | 2  | 0 | 0 | 1 | 2   |
-|            |||| P1        |   1 | 0 | 0 | 0  | 1 | 7 | 5 | 0   |
-|            |||| P2        |   1 | 3 | 5 | 4  | 2 | 3 | 5 | 6   |
-|            |||| P3        |   0 | 6 | 3 | 2  | 0 | 6 | 5 | 2   |
-|            |||| P4        |   0 | 0 | 1 | 4  | 0 | 6 | 5 | 6   |
-
+ | Región de           |
+ | ---------|----------|
  |  Old  X  | New  XIV |   
  | -------- | -------- |  
  |  10501   |  14104   |
