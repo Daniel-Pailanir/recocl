@@ -12,4 +12,5 @@ github install Daniel-Pailanir/recocl
 
 + Creación de la Región de Los Ríos en 2007
 + Creación de la Región de Arica y Parinacota en 2007
++ Creación de la Provincia de Marga Marga en 2010
 + Creación de la Región de Ñuble en 2017
