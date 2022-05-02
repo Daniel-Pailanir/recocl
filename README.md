@@ -14,3 +14,14 @@ github install Daniel-Pailanir/recocl
 + Creación de la Región de Arica y Parinacota en 2007
 + Creación de la Provincia de Marga Marga en 2010
 + Creación de la Región de Ñuble en 2017
+
+## Ejemplo
+
+La forma para aplicar todas las codificaciones de comunas hasta el año 2017 es simplemente tipear:
+```s
+recocl codigo_comuna, gen(nuevo_codigo_comuna) year(2017) all
+```
+
+Lo que nos generará los siguientes cambios:
+
+
