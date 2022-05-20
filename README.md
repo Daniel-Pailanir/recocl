@@ -78,5 +78,5 @@ Lo que nos generará los siguientes cambios:
  |   8419  🠊  16305   |
 
 
-
+$$A_t$$
 
