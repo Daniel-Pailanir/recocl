@@ -78,5 +78,5 @@ Lo que nos generará los siguientes cambios:
  |   8419  🠊  16305   |
 
 
-$$A_t$$
+$$\sum_{t=0}^\infty A_t \phi \xi$$
 
